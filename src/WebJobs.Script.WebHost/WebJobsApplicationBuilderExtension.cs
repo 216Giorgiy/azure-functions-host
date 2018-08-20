@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             builder.UseMiddleware<HttpExceptionMiddleware>();
             builder.UseMiddleware<ResponseBufferingMiddleware>();
             builder.UseMiddleware<HomepageMiddleware>();
+            builder.UseMiddleware<WebHostHttpThrottleMiddleware>();
             builder.UseMiddleware<FunctionInvocationMiddleware>();
             builder.UseMiddleware<HostWarmupMiddleware>();
 

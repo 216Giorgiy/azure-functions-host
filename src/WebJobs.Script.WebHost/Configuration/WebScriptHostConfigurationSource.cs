@@ -58,6 +58,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
                     Data[SecretsPathProperty] = Path.Combine(AppContext.BaseDirectory, "Secrets");
                     Data[TestDataPathProperty] = Path.Combine(Path.GetTempPath(), @"FunctionsData");
                 }
+
+                // TODO: When in dynamic, enable http throttles
             }
         }
     }

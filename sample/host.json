@@ -21,7 +21,8 @@
         "http": {
             "routePrefix": "api",
             "maxConcurrentRequests": 5,
-            "maxOutstandingRequests": 30
+            "maxOutstandingRequests": 30,
+            "dynamicThrottlesEnabled": true
         },
         "queues": {
             "visibilityTimeout": "00:00:10"
